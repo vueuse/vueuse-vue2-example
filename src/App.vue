@@ -1,29 +1,59 @@
 <template>
   <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js + TypeScript App"/>
+    <img src="./logo.svg" />
+    <h1>Hello <a href='https://github.com/vuejs/vue-next' target='__blank'>Vue 2</a> and <a href='https://github.com/antfu/vueuse' target='__blank'>VueUse</a>!</h1>
+
+    <h3>Mouse: {{x}} x {{y}}</h3>
+    <h3>
+      Counter: {{count}}
+      <a @click='inc()' style='margin-right:10px'>+</a>
+      <a @click='dec()'>-</a>
+    </h3>
+
+    <br/><br/>
+    <p><a href='https://github.com/antfu/vueuse-vue2-example' target='__blank'>Source</a></p>
+    <p><a href='https://vueuse-next-example.netlify.app/' target='__blank'>Vue 3 Demo</a></p>
+    <p><a href='https://vite-vueuse-starter.netlify.app/' target='__blank'>Vite Starter</a></p>
   </div>
 </template>
 
-<script lang="ts">
-import Vue from 'vue';
-import HelloWorld from './components/HelloWorld.vue';
+<script>
+import { useMouse, useCounter } from '@vueuse/core'
 
-export default Vue.extend({
-  name: 'App',
-  components: {
-    HelloWorld
+export default {
+  setup() {
+    const { x, y } = useMouse()
+    const { count, inc, dec } = useCounter()
+
+    return {
+      x, 
+      y,
+      count,
+      inc,
+      dec,
+    }
   }
-});
+}
 </script>
 
-<style>
+<style scoped>
+@import url('https://fonts.googleapis.com/css?family=Noto+Serif&display=swap');
+
+html, body, h1, h2, h3, p {
+  font-family: 'Noto Serif', serif;
+  user-select: none;
+}
+
 #app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
   text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
+  color: rgba(0,0,0,0.4);
+}
+img {
+  width: 500px;
+}
+a {
+  color: #41b883;
+  text-decoration: none;
+  cursor: pointer;
 }
 </style>
