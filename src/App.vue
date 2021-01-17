@@ -1,7 +1,7 @@
 <template>
   <div id="app">
     <img src="./logo.svg" />
-    <h1>Hello <a href='https://github.com/vuejs/vue-next' target='__blank'>Vue 2</a> and <a href='https://github.com/antfu/vueuse' target='__blank'>VueUse</a>!</h1>
+    <h1>Hello <a href='https://github.com/vuejs/vue-next' target='__blank'>Vue 2</a> and <a href='https://github.com/vueuse/vueuse' target='__blank'>VueUse</a>!</h1>
 
     <h3>Mouse: {{x}} x {{y}}</h3>
     <h3>
@@ -11,9 +11,9 @@
     </h3>
 
     <br/><br/>
-    <p><a href='https://github.com/antfu/vueuse-vue2-example' target='__blank'>Source</a></p>
-    <p><a href='https://vueuse-next-example.netlify.app/' target='__blank'>Vue 3 Demo</a></p>
-    <p><a href='https://vite-vueuse-starter.netlify.app/' target='__blank'>Vite Starter</a></p>
+    <p><a href='https://github.com/vueuse/vueuse-vue2-example' target='__blank'>Source</a></p>
+    <p><a href='https://vueuse-vue3-example.netlify.app/' target='__blank'>Vue 3 Demo</a></p>
+    <p><a href='https://vueuse-vite-starter.netlify.app/' target='__blank'>Vite Starter</a></p>
   </div>
 </template>
 
