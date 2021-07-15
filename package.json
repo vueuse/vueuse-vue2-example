@@ -6,14 +6,14 @@
     "build": "vue-cli-service build"
   },
   "dependencies": {
-    "@vue/composition-api": "^1.0.0-beta.26",
-    "@vueuse/core": "^4.0.8",
-    "vue": "^2.6.12"
+    "@vue/composition-api": "^1.0.0",
+    "@vueuse/core": "^5.1.3",
+    "vue": "^2.6.14"
   },
   "devDependencies": {
-    "@vue/cli-plugin-typescript": "^4.5.10",
-    "@vue/cli-service": "^4.5.10",
-    "typescript": "^4.1.3",
-    "vue-template-compiler": "^2.6.12"
+    "@vue/cli-plugin-typescript": "^4.5.13",
+    "@vue/cli-service": "^4.5.13",
+    "typescript": "^4.3.5",
+    "vue-template-compiler": "^2.6.14"
   }
 }
