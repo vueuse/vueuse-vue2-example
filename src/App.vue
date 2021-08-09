@@ -1,7 +1,7 @@
 <template>
   <div id="app">
     <img src="./logo.svg" />
-    <h1>Hello <a href='https://github.com/vuejs/vue-next' target='__blank'>Vue 2</a> and <a href='https://github.com/vueuse/vueuse' target='__blank'>VueUse</a>!</h1>
+    <h1>Hello <a href='https://github.com/vuejs/vue' target='__blank'>Vue 2</a> and <a href='https://github.com/vueuse/vueuse' target='__blank'>VueUse</a>!</h1>
 
     <h3>Mouse: {{x}} x {{y}}</h3>
     <h3>
